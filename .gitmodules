@@ -1,0 +1,8 @@
+[submodule "src/main/xsd"]
+	path = src/main/xsd
+	url = https://github.com/onacit/schemas.git
+	branch = master
+[submodule ".idea/codeStyles"]
+	path = .idea/codeStyles
+	url = https://github.com/onacit/dot-idea-codestyles.git
+	branch = master

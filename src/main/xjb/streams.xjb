@@ -1,0 +1,20 @@
+<jaxb:bindings
+        xmlns:xs="http://www.w3.org/2001/XMLSchema"
+        xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+        xmlns:inheritance="http://jaxb2-commons.dev.java.net/basic/inheritance"
+        version="2.1">
+  <jaxb:bindings schemaLocation="../../../src/main/xsd/streams.xsd">
+    <jaxb:bindings node="(//xs:element[@name='stream']/xs:complexType/xs:sequence/xs:any)[1]">
+      <jaxb:property name="tlsNegotiation"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="(//xs:element[@name='stream']/xs:complexType/xs:sequence/xs:any)[2]">
+      <jaxb:property name="saslNegotiation"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="(//xs:element[@name='stream']/xs:complexType/xs:sequence/xs:choice/xs:choice)[1]">
+      <jaxb:property name="clientStanza"/>
+    </jaxb:bindings>
+    <jaxb:bindings node="(//xs:element[@name='stream']/xs:complexType/xs:sequence/xs:choice/xs:choice)[2]">
+      <jaxb:property name="serverStanza"/>
+    </jaxb:bindings>
+  </jaxb:bindings>
+</jaxb:bindings>
